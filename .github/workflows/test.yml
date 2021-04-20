@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: alexcb/actions/setup-earthly@ca4e1cd
       - name: what version is installed?
-        run: earthly --version
+        run: ls -la / && earthly --version
