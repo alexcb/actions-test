@@ -14,6 +14,6 @@ jobs:
       FORCE_COLOR: 1
       EARTHLY_CONVERSION_PARALLELISM: "5"
     steps:
-      - uses: alexcb/actions/setup-earthly@0bdc920e3a7c5c415734f2a210d5112d47c39ebe
+      - uses: alexcb/actions/setup-earthly@9b6a11560de3eb6a1a87eb68e1938a1db88b9755
       - name: what version is installed?
         run: ls -la / && earthly --version
