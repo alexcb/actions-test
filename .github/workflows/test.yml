@@ -13,4 +13,4 @@ jobs:
       - name: what version is installed?
         run: earthly --version
       - name: run the earthly hello world
-        run: earthly --version github.com/earthly/hello-world:main+hello
+        run: earthly github.com/earthly/hello-world:main+hello
