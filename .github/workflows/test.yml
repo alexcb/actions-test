@@ -1,0 +1,19 @@
+name: GitHub Actions CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tests:
+    name: +test +test-fail
+    runs-on: ubuntu-latest
+    env:
+      FORCE_COLOR: 1
+      EARTHLY_CONVERSION_PARALLELISM: "5"
+    steps:
+      - uses: alexcb/actions/setup-earthly
+      - name: what version is installed?
+        run: earthly --version
