@@ -16,4 +16,6 @@ jobs:
     steps:
       - uses: alexcb/actions/setup-earthly@a42e3db1eb7743ca1b31242fc24183d439246c1e
       - name: what version is installed?
-        run: ls -la / && earthly --version
+        run: earthly --version
+      - name: run the earthly hello world
+        run: earthly --version github.com/earthly/hello-world:main+hello
