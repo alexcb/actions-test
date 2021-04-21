@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: earthly/actions/setup-earthly@995e3cede925033d791bce789aacc80846a88c83
+        with:
+          earthly-version: '0.5.2'
       - name: what version is installed?
         run: earthly --version
       - name: run the earthly hello world
