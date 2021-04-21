@@ -9,7 +9,7 @@ jobs:
     name: example earthly test
     runs-on: ubuntu-latest
     steps:
-      - uses: earthly/actions/setup-earthly@df239341c368eb73f32ef4c429aea5f0b61a280a
+      - uses: earthly/actions/setup-earthly@d354918853accac6355796de9667f3cc9035d8d8
         with:
           earthly-version: '0.5.2'
       - name: what version is installed?
