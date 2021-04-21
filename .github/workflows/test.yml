@@ -16,3 +16,5 @@ jobs:
         run: earthly --version
       - name: run the earthly hello world
         run: earthly github.com/earthly/hello-world:main+hello
+      - name: run the test Earthfile from this repo
+        run: earthly +all
