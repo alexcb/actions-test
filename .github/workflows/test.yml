@@ -12,6 +12,7 @@ jobs:
       - uses: earthly/actions/setup-earthly@9bed7159f7ca7adbae33f63541eda92e9d8c4692
         with:
           earthly-version: v0.5.2
+      - uses: actions/checkout@v2
       - name: what version is installed?
         run: earthly --version
       - name: run the earthly hello world
