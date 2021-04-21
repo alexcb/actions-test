@@ -17,4 +17,4 @@ jobs:
       - name: run the earthly hello world
         run: earthly github.com/earthly/hello-world:main+hello
       - name: run the test Earthfile from this repo
-        run: cat Earthfile && earthly +all
+        run: pwd && ls && cat Earthfile && earthly +all
